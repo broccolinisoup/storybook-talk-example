@@ -1,0 +1,38 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import {Primary, Success, Warning, Danger, Info, Control, Basic} from './Button.stories';
+
+<Meta title='Components/CMButton' />
+
+# Usage
+
+This is our button component. If there is no props given, it renders as a default button (Please see in the stories).
+There are also other types of buttons. Simple pass the available options as a `colour` prop (Please have a look at the props table documentation)
+for different colours and types.
+
+Buttons are also available in different sizes and front sizes.
+Simple pass the available options as a `size` or `fontSize` prop (Please have a look at the props table documentation)
+
+# Implementation
+
+```html
+<CmButton @click="onClick" type="basic">BASIC</CmButton>
+```
+
+# Stories
+
+  <Story name="Primary">{Primary}</Story>
+
+  <Story name="Success">{Success}</Story>
+
+  <Story name="Warning">{Warning}</Story>
+
+  <Story name="Danger">{Danger}</Story>
+
+  <Story name="Info">{Info}</Story>
+
+  <Story name="Control">{Control}</Story>
+
+  <Story name="Basic">{Basic}</Story>
+
+
+
